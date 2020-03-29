@@ -17,6 +17,14 @@ import (
 const monitoamentos = 3
 const delay = 5
 
+func exibeIntroducao()  {
+	//declarar mome
+	c := color.New(color.FgBlue, color.Bold)
+	versao := 1.4
+	c.Println("Monitoramento Sites Qlik" )
+	fmt.Println("Este programa esta na versão", versao)
+}
+
 func main() {
 	exibeIntroducao()
 	for {
@@ -69,14 +77,6 @@ func exibeSubMenu(){
 		os.Exit(-1)
 	}
 
-}
-
-func exibeIntroducao()  {
-	//declarar mome
-	c := color.New(color.FgBlue, color.Bold)
-	versao := 1.4
-	c.Println("Monitoramento Sites Qlik" )
-	fmt.Println("Este programa esta na versão", versao)
 }
 
 func leComando() int {
